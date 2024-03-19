@@ -1,0 +1,10 @@
+# Ignore certificate files
+*.crt
+*.cer
+*.pem
+*.csr
+*.srl
+index.*
+passwords*
+# Ignore key files
+*.key

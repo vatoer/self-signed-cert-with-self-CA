@@ -1,0 +1,29 @@
+[ req ]
+default_bits       = 4096
+default_md         = sha512
+default_keyfile    = change.with.your.key
+prompt             = yes
+encrypt_key        = yes
+string_mask         = utf8only
+
+# base request
+distinguished_name = req_distinguished_name
+
+# distinguished_name
+[ req_distinguished_name ]
+# See <https://en.wikipedia.org/wiki/Certificate_signing_request>.
+countryName                     = Country Name (2 letter code)
+stateOrProvinceName             = State or Province Name
+localityName                    = Locality Name
+0.organizationName              = Organization Name
+organizationalUnitName          = Organizational Unit Name
+commonName                      = Common Name
+emailAddress                    = Email Address
+
+# Optionally, specify some defaults.
+countryName_default             = ID
+stateOrProvinceName_default     = Jakarta
+localityName_default            = Jakarta
+0.organizationName_default      = Kemlu
+#organizationalUnitName_default =
+#emailAddress_default           =
